@@ -17,9 +17,9 @@ if ENV == 'dev':
     
 else:
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://rdtcsnvneueqrr:f7239f1149d0435a3e99b31a3013f07a2bfc6effa98b85120f6804d6dd93a34f@ec2-3-237-55-96.compute-1.amazonaws.com:5432/d78mgkrhaqjbe8'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mjvrvbywubizfq:05e093579a595c1fb11450cc6225736863b18fccf70c168dd4ee000c19b17c8f@ec2-54-73-68-39.eu-west-1.compute.amazonaws.com:5432/d2e1l5fln025ri'
 
-    conn = psycopg2.connect(database="d78mgkrhaqjbe8", user="rdtcsnvneueqrr", password="f7239f1149d0435a3e99b31a3013f07a2bfc6effa98b85120f6804d6dd93a34f", host="ec2-3-237-55-96.compute-1.amazonaws.com")
+    conn = psycopg2.connect(database="d2e1l5fln025ri", user="mjvrvbywubizfq", password="05e093579a595c1fb11450cc6225736863b18fccf70c168dd4ee000c19b17c8f", host="ec2-54-73-68-39.eu-west-1.compute.amazonaws.com")
     mycursor =conn.cursor()
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
